@@ -1,0 +1,20 @@
+num1 = float(input("enter first number: ))
+num2 = float(input("enter second number: ))
+operation = input("enter operation(+,-,/,*): ")
+if operation == "+":
+    result = num1 + num2
+    print(result)
+elif operation =="-":
+    result = num1 - num2
+    print(result)
+elif operation == "*":
+    result = num1 * num2
+    print(result)
+elif operation == ("/"):
+    if num2 != 0:
+        result = num1 / num2
+        print(result)
+    else:
+        print("error! division by zero is not allowed.")
+else:
+    print("invalid operation")
